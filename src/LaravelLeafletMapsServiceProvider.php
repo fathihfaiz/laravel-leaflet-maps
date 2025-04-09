@@ -11,7 +11,7 @@ class LaravelLeafletMapsServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'leaflet-maps');
 
-        Blade::component('leaflet-maps::components.leaflet', Components\Leaflet::class);
+        Blade::componentNamespace('FathihFaiz\\LeafletMaps\\Components', 'maps');
 
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/leaflet-maps'),
