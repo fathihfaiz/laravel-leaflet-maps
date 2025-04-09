@@ -1,0 +1,26 @@
+{
+  "name": "fathihfaiz/laravel-leaflet-maps",
+  "description": "A Laravel component for integrating Leaflet maps easily.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Fathih Faiz",
+          "email": "fathihfaiz@gmail.com"
+      }
+  ],
+  "autoload": {
+      "psr-4": {
+          "FathihFaiz\\LeafletMaps\\": "src/"
+      }
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+              "FathihFaiz\\LeafletMaps\\LaravelLeafletMapsServiceProvider"
+          ]
+      }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
